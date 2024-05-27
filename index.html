@@ -1,0 +1,103 @@
+<!--DOCTYPE html!-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Indexx_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="position-relative">
+    <main>
+        <section  class="bookmarks-site">
+            <div class="container   d-flex   justify-content-center align-items-center ">
+                <div class="row p-5 bg-color text-white  ">
+                    <!-- ------Start Popup  ------->
+                    <div id="popup"
+                        class="  d-flex  visually-hidden  justify-content-center h-100 align-items-center box-rulles position-absolute top-0 start-0 end-0 bottom-0">
+                        <div class="box-content p-4 rounded-3 ">
+                            <div class="cricle d-flex mb-3">
+                                <span class="rounded-circle me-2 d-block cricle-r bg-danger"></span>
+                                <span class="rounded-circle me-2 d-block cricle-r bg-warning"></span>
+                                <span class="rounded-circle me-2 d-block cricle-r bg-success"></span>
+                            </div>
+                            <p class="text-white">Site Name or Url is not valid, Please follow the rules below :</p>
+                            <ol class=" rules list list-unstyled">
+    
+                                <li><i class="fa-regular fa-circle-right me-2 text-danger"></i>Site name must contain at
+                                    least 3 characters </li>
+    
+                                <li><i class="fa-regular fa-circle-right me-2 text-danger"></i>Site URL must be a valid one
+                                </li>
+                            </ol>
+                            <div class="d-flex justify-content-center mt-3">
+                                <button id="btnClose" onclick="closePopup()"
+                                    class="btn btn-danger px-5 btn-font">OK</button>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <!------ End Popup  ------>
+    
+                    <!-- TitlePage -->
+                    <div class="col-md-12 pt-5">
+                        <div class="title-head  text d-flex justify-content-center mx-auto dotted text-center py-5  ">
+                            <h1 class="rounded-2">BookMarks site</h1>
+                        </div>
+                    <!-- TitlePage -->
+                    </div>
+                    <!-- Start Inputs Design -->
+                    <div class="d-flex   justify-content-center align-items-center  p-3 ">
+                        <div class="col-md-10">
+                            <div class="title text-center pb-5">
+                                <h2><i class="fa-solid fa-bookmark me-1"></i>Bookmark your favorite sites<i
+                                        class="fa-solid fa-bookmark ms-1"></i></h2>
+                            </div>
+                            <div class="input1 mb-3">
+                                <label class="mb-2" for=""> Site Name </label>
+                                <input oninput="siteName(this.value)" id="idSiteName" class="form-control input-style">
+                            </div>
+                            <div class="input2 mb-4">
+                                <label class="mb-2" for=""> Site Url</label>
+                                <input oninput="siteUrl(this.value)" id="idUrl" class="form-control input-style">
+                            </div>
+                            <div class="text-center   pb-4 dotted">
+                                <button onclick="submit()" class=" btn btn-danger px-5 submit ">Submit</button>
+                            </div>
+                            <div>
+                                <table class=" table text-center table-responsive-sm  table-style mt-5">
+                                    <thead >
+                                        <tr class="fs-6">
+                                            <th>Index</th>
+                                            <th>Website Name</th>
+                                            <th >Visit</th>
+                                            <th>Delete</th>
+                                        </tr>
+    
+                                    </thead>
+                                    <tbody id="Idtbody">
+                                    </tbody>
+                                </table>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!-- End Inputs Design -->
+                </div>
+            </div>
+    
+    
+        </section>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+
+</html>

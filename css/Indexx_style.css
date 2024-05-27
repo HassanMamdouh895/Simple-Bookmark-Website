@@ -1,0 +1,158 @@
+body {
+  background: url(../images/d4.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+/* Start Popup Style */
+
+.bg-color {
+  background-color: #09223699;
+}
+
+
+.box-rulles
+{
+  background-color: #0000008c;
+
+ 
+}
+.box-content
+{
+  width:480px ;
+}
+
+.cricle-r
+{
+  width: 20px;
+  height: 20px;
+} 
+.box-content
+{
+  background-color: #164da9;
+  translate:0 -20% ;
+}
+.bookmarks-site .box-content p
+{
+  color:#352E28  ;
+  font-weight: 700;
+  line-height: 1.7;
+  font-size: 21px;
+}
+
+.rules li
+{
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+/* End Popup Style */
+
+
+
+/* Start Design inputs & Header title */
+
+.title-head {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  padding: 60px;
+  max-width: 80%;
+  margin: auto;
+}
+.dotted {
+  border-bottom: 3px dotted #75baf6;
+}
+
+.input-style {
+  --bs-body-color: white;
+  --bs-body-bg: #131a3b7d;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 48%);
+  --bs-border-color: rgb(13 110 253 / 48%);
+}
+.text h1 {
+
+  background-color: #123da5;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #6bbaff;
+    transition: all 0.8s;
+ 
+  
+}
+
+.text h1:hover{
+  animation: unset;
+  color: #123361;
+  filter: blur(0.5px);
+  text-shadow: 0 0 10px #4b90f0, 0 0 20px #4b90f0, 0 0 30px #4b90f0,
+    0 0 40px #4b90f0, 0 0 50px #4b90f0, 0 0 60px #4b90f0;
+  animation-delay: calc(200ms);
+  transition: all 0.8s;
+  
+}
+
+.table-style {
+  --bs-table-color: white;
+  --bs-table-bg: #1c4a8c;
+}
+.submit {
+  --bs-btn-bg: #202081cf;
+  --bs-btn-hover-bg: #2626a7cf;
+  --bs-btn-active-bg: #2a2ab9cf;
+  --bs-btn-border-color: 0 0 0 0.25rem rgb(13 110 253 / 48%);
+  /* color: white;
+    background-color: #202081cf; */
+}
+
+.btn
+{
+    --bs-btn-padding-x: 0.35rem;
+}
+
+.btn-font{
+  font-family: cursive;
+}
+
+.title h2{
+  text-transform: capitalize;
+    font-weight: 700;
+    /* color: #44a0ff; */
+    font-family: fantasy;
+    letter-spacing: 5px;
+    background: linear-gradient(to right, #1a6dff, #75c1ff);
+    background-clip: text;
+    color: transparent;
+}
+
+/* End Design inputs & Header title */
+
+
+/* Start table style edit */
+tbody {
+    font-size: 19px;
+}
+
+.submit:focus {
+  background-color: 202081cf;
+}
+
+.table > :not(caption) > * > * {
+    padding: 15px 5px;
+}
+.table>tbody {
+    vertical-align: middle;
+    font-family: cursive, system-ui;
+    
+}
+
+table th
+{
+    font-size: 20px;
+}
+
+/* End table style edit */
